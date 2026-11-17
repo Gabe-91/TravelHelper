@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Travel Helper</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 24px;
+      background-color: #0a6e8a;
+      color: #ffffff;
+    }
+
+    .brand {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .content h1,
+    .content h2 {
+      color: #0a6e8a;
+    }
+
+    .content h2 {
+      margin-top: 40px;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .team-member {
+      background-color: #f2f9fb;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-member h3 {
+      margin: 0 0 4px;
+    }
+
+    .team-member p {
+      margin: 0;
+      color: #555555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Travel Helper</div>
+
+    <div class="nav-links">
+      <a href="travel_helper.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>About Us</h1>
+    <p>
+      Travel Helper is a simple platform that helps travelers discover
+      beaches, temples, and countries worth visiting. We believe every trip should
+      start with inspiration, so we gather destinations that offer natural beauty,
+      rich culture, and memorable experiences.
+    </p>
+    <p>
+      Our goal is to make planning easier. Search by keyword, browse curated
+      recommendations, and find your next adventure in a few clicks.
+    </p>
+
+    <h2>Meet Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <h3>Gabriel Atienza</h3>
+        <p>Founder and Project Lead</p>
+      </div>
+      <div class="team-member">
+        <h3>Gabriel Atienza</h3>
+        <p>Content Researcher</p>
+      </div>
+      <div class="team-member">
+        <h3>Gabriel Atienza</h3>
+        <p>Web Developer</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

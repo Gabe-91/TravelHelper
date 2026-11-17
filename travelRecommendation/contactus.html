@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Travel Helper</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333333;
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 24px;
+      background-color: #0a6e8a;
+      color: #ffffff;
+    }
+
+    .brand {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .content h1 {
+      color: #0a6e8a;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 4px;
+      display: block;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #0a6e8a;
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #085a71;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Travel Helper</div>
+
+    <div class="nav-links">
+      <a href="travel_helper.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <main class="content">
+    <h1>Contact Us</h1>
+    <p>Have a question or suggestion? Send us a message and we'll get back to you.</p>
+
+    <form action="mailto:you@example.com" method="post" enctype="text/plain">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+</body>
+</html>

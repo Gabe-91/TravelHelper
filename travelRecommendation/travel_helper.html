@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Helper</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 12px 24px;
+      background-color: #0a6e8a;
+      color: #ffffff;
+    }
+
+    .brand {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .search-area {
+      display: flex;
+      gap: 8px;
+    }
+
+    .search-area input {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+      width: 220px;
+    }
+
+    .search-area button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 4px;
+      background-color: #ffffff;
+      color: #0a6e8a;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .search-area button:hover {
+      background-color: #d9f2f8;
+    }
+
+    .hero {
+      min-height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 40px 20px;
+      background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 16px;
+    }
+
+    .hero p {
+      max-width: 640px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .results {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      padding: 30px 24px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-body {
+      padding: 16px;
+    }
+
+    .card-body h3 {
+      margin: 0 0 8px;
+      color: #0a6e8a;
+    }
+
+    .card-body p {
+      margin: 0;
+      color: #555555;
+    }
+
+    .message {
+      padding: 30px 24px;
+      color: #555555;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+    
+    .local-time {
+        margin-top: 8px !important;
+        font-weight: bold;
+        color: #0a6e8a !important;
+    }
+
+  </style>
+  
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Travel Helper</div>
+
+    <div class="nav-links">
+      <a href="travel_helper.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+
+    <div class="search-area">
+      <input type="text" id="searchInput" placeholder="Search: beach, temple, country">
+      <button type="button" id="searchBtn">Search</button>
+      <button type="button" id="resetBtn">Reset</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Discover Your Next Adventure</h1>
+    <p>
+      Welcome to Travel Helper, your guide to the world's most beautiful
+      beaches, historic temples, and fascinating countries. Whether you're dreaming
+      of a relaxing sunset by the ocean or exploring ancient architecture, we help
+      you find the perfect destination for your next trip.
+    </p>
+  </section>
+
+  <section id="results" class="results"></section>
+
+  <script src="travel_helper.js"></script>
+</body>
+</html>
